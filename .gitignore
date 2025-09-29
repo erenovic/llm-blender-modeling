@@ -158,3 +158,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+outputs/
+assets/models/

@@ -1,9 +1,7 @@
-
 """Tests for main module."""
 
 import pytest
-
-from vllm_blender.main import hello_world, get_version, main
+from vllm_blender.main import get_version, hello_world, main
 
 
 class TestMainFunctions:
@@ -44,11 +42,14 @@ class TestMainFunctions:
         assert result == 0
 
 
-@pytest.mark.parametrize("name,expected_contains", [
-    ("Bob", "Bob"),
-    ("Charlie", "Charlie"),
-    (None, "Hello from vllm-blender!"),
-])
+@pytest.mark.parametrize(
+    "name,expected_contains",
+    [
+        ("Bob", "Bob"),
+        ("Charlie", "Charlie"),
+        (None, "Hello from vllm-blender!"),
+    ],
+)
 def test_hello_world_parametrized(name: str, expected_contains: str) -> None:
     """Test hello_world function with various inputs."""
     result = hello_world(name)
