@@ -1,4 +1,5 @@
 import logging
+import os
 from pathlib import Path
 
 import hydra
@@ -16,6 +17,10 @@ logger = logging.getLogger(__name__)
 @hydra.main(version_base=None, config_path="../config", config_name="run_blendernet.yaml")
 def main(cfg_dict: DictConfig):
     model, tokenizer = load(cfg_dict.model_path)
+
+    env_prompt = os.environ.get("PROMPT", None)
+    if env_prompt is not None:
+        cfg_dict.prompt = env_prompt
 
     if cfg_dict.prompt is None:
         raise ValueError(f"Prompt is required! Current prompt: {cfg_dict.prompt}")

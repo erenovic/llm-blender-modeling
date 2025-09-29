@@ -3,8 +3,7 @@ blender_exe_path: "/Applications/Blender.app/Contents/MacOS/Blender"
 
 # Memory optimization settings
 quantization: "8bit" # Options: null, "4bit", "8bit"
-max_memory_gb: 8.0 # Maximum memory to use (adjust based on your system)
-max_tokens: 1024
+max_tokens: null
 
 prompt: null
 obj_name: null
