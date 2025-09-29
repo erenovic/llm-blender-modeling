@@ -1,6 +1,6 @@
 # vllm-blender
 
-An LLM project using VLLM and BlenderNet to generate 3D Assets for Three.JS development
+An LLM project using VLLM and BlenderNet to generate 3D Assets for Three.JS development. This project is built upon the foundational work of [BlenderLLM](https://github.com/FreedomIntelligence/BlenderLLM) by FreedomIntelligence.
 
 [![CI](https://github.com/erenovic/vllm_blender/workflows/CI/badge.svg)](https://github.com/erenovic/vllm_blender/actions)
 [![Coverage](https://codecov.io/gh/erenovic/vllm_blender/branch/main/graph/badge.svg)](https://codecov.io/gh/erenovic/vllm_blender)
@@ -40,12 +40,14 @@ python -m vllm_blender
 ### Setup
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/erenovic/vllm_blender.git
 cd vllm_blender
 ```
 
 2. Set up development environment:
+
 ```bash
 make all  # Install dependencies, pre-commit hooks, and run all checks
 ```
@@ -64,19 +66,38 @@ make ci            # Run all CI checks locally
 make clean         # Clean build artifacts
 ```
 
-
 ## Features
 
-- ✅ Modern Python packaging with `pyproject.toml`
-- ✅ Code formatting and linting with Ruff
-- ✅ Static type checking with mypy
-- ✅ Testing with pytest and coverage reporting
-- ✅ Pre-commit hooks for code quality
-- ✅ GitHub Actions CI/CD
+-   ✅ Modern Python packaging with `pyproject.toml`
+-   ✅ Code formatting and linting with Ruff
+-   ✅ Static type checking with mypy
+-   ✅ Testing with pytest and coverage reporting
+-   ✅ Pre-commit hooks for code quality
+-   ✅ GitHub Actions CI/CD
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Acknowledgments
+
+This project builds upon the excellent work of [BlenderLLM](https://github.com/FreedomIntelligence/BlenderLLM) by FreedomIntelligence. We gratefully acknowledge their contributions to the field of LLM-based CAD script generation.
+
+### Citation
+
+If you use this project or find it helpful, please consider citing the original BlenderLLM work:
+
+```bibtex
+@misc{du2024blenderllmtraininglargelanguage,
+      title={BlenderLLM: Training Large Language Models for Computer-Aided Design with Self-improvement},
+      author={Yuhao Du and Shunian Chen and Wenbo Zan and Peizhao Li and Mingxuan Wang and Dingjie Song and Bo Li and Yan Hu and Benyou Wang},
+      year={2024},
+      eprint={2412.14203},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2412.14203},
+}
+```
 
 ## License
 
