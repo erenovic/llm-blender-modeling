@@ -81,7 +81,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgments
 
-This project builds upon the excellent work of [BlenderLLM](https://github.com/FreedomIntelligence/BlenderLLM) by FreedomIntelligence. We gratefully acknowledge their contributions to the field of LLM-based CAD script generation.
+This project builds upon the work of [BlenderLLM](https://github.com/FreedomIntelligence/BlenderLLM) by FreedomIntelligence.
 
 ### Citation
 
